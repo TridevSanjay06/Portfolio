@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Github, Linkedin, Menu, Moon, Sun, X } from 'lucide-react';
+import { Code2, Github, Linkedin, Menu, Moon, Sun, X } from 'lucide-react';
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -12,6 +12,22 @@ const navLinks = [
   { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
 ];
+
+function BrandMark() {
+  return (
+    <span
+      className="flex h-7 w-7 items-center justify-center rounded-full border"
+      style={{
+        borderColor: 'var(--border)',
+        background: 'var(--accent)',
+        color: 'var(--canvas)',
+      }}
+      aria-hidden="true"
+    >
+      <Code2 size={15} strokeWidth={2.4} />
+    </span>
+  );
+}
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState('');
@@ -81,8 +97,7 @@ export default function Navbar() {
             className="mr-5 flex h-10 items-center gap-2 rounded-pill px-2 text-sm font-bold transition-transform active:scale-95"
             style={{ color: 'var(--text-primary)', letterSpacing: '-0.02em' }}
           >
-            <span className="h-5 w-5 rounded-full" style={{ background: '#EB001B' }} />
-            <span className="-ml-3 h-5 w-5 rounded-full opacity-95" style={{ background: '#F79E1B' }} />
+            <BrandMark />
             KTS
           </button>
 
@@ -173,8 +188,7 @@ export default function Navbar() {
           className="flex items-center gap-2 text-sm font-bold"
           style={{ color: 'var(--text-primary)', letterSpacing: '-0.02em' }}
         >
-          <span className="h-5 w-5 rounded-full" style={{ background: '#EB001B' }} />
-          <span className="-ml-3 h-5 w-5 rounded-full" style={{ background: '#F79E1B' }} />
+          <BrandMark />
           KTS
         </button>
 

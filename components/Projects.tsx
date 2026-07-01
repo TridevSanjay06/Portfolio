@@ -11,7 +11,9 @@ const stackColors: Record<string, string> = {
   FastAPI: '#009688',
   'Next.js': '#000000',
   'Next.js 14': '#000000',
+  'Rainforest API': '#CF4500',
   'NVIDIA NIM': '#76B900',
+  'Llama 3.1 70B': '#9A3A0A',
   LLMs: '#9A3A0A',
   'Prompt Engineering': '#CF4500',
   Docker: '#2496ED',
@@ -137,21 +139,23 @@ export default function Projects() {
 
                   {/* Action buttons */}
                   <div className="flex gap-2 flex-shrink-0">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      id={`project-${project.id}-github`}
-                      className="p-2.5 rounded-full border transition-all hover:scale-110 hover:border-accent"
-                      style={{
-                        borderColor: 'var(--border)',
-                        color: 'var(--text-primary)',
-                        background: 'var(--bg)',
-                      }}
-                      aria-label={`${project.name} GitHub`}
-                    >
-                      <Github size={18} />
-                    </a>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        id={`project-${project.id}-github`}
+                        className="p-2.5 rounded-full border transition-all hover:scale-110 hover:border-accent"
+                        style={{
+                          borderColor: 'var(--border)',
+                          color: 'var(--text-primary)',
+                          background: 'var(--bg)',
+                        }}
+                        aria-label={`${project.name} GitHub`}
+                      >
+                        <Github size={18} />
+                      </a>
+                    )}
                     <a
                       href={project.live}
                       target="_blank"
@@ -226,10 +230,10 @@ export default function Projects() {
                     className="text-sm font-semibold text-center"
                     style={{ color: 'var(--accent)', letterSpacing: '-0.01em' }}
                   >
-                    AI Video Production
+                    Amazon Intelligence
                   </span>
                   <span className="text-xs text-center mt-1" style={{ color: 'var(--text-secondary)' }}>
-                    Scripts - Storyboards - GTM
+                    URL analysis - Competitors - Insights
                   </span>
                   <a
                     href={project.live}

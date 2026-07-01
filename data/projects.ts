@@ -4,7 +4,7 @@ export interface Project {
   tagline: string;
   description: string[];
   stack: string[];
-  github: string;
+  github?: string;
   live: string;
   flagship?: boolean;
   accentColor: string;
@@ -12,17 +12,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'videoforge-ai',
-    name: 'VideoForge AI',
-    tagline: 'AI-powered video production asset generator',
+    id: 'pixii-engine',
+    name: 'Pixii Engine',
+    tagline: 'AI-powered Amazon intelligence engine',
     description: [
-      'Converts product documents, release notes, and feature specs into production video planning assets: scripts, storyboards, voiceover copy, and GTM content',
-      'Integrated NVIDIA NIM API with custom prompt engineering; FastAPI backend on Render, Next.js frontend on Vercel',
-      'Monorepo architecture with separate frontend/backend, Docker support, and CI-ready setup scripts',
+      'Analyzes live Amazon product URLs and produces a competitive breakdown in seconds for product positioning, market context, and listing intelligence',
+      'Combines Rainforest API product data with NVIDIA NIM and Llama 3.1 70B for structured AI-generated insights',
+      'Includes a live URL workflow and sample data mode so users can evaluate products quickly without setup friction',
     ],
-    stack: ['TypeScript', 'Python', 'FastAPI', 'Next.js', 'NVIDIA NIM', 'LLMs', 'Prompt Engineering', 'Docker'],
-    github: 'https://github.com/TridevSanjay06/VideoForge-AI',
-    live: 'https://video-forge-ai-weld.vercel.app/',
+    stack: ['TypeScript', 'Next.js', 'Rainforest API', 'NVIDIA NIM', 'Llama 3.1 70B', 'LLMs', 'Prompt Engineering'],
+    live: 'https://pixxi-engine.vercel.app/',
     flagship: true,
     accentColor: '#CF4500',
   },

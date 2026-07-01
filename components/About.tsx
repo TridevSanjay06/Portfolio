@@ -51,7 +51,7 @@ export default function About() {
                 I am a B.Tech graduate in AI & Machine Learning from Vel Tech, Chennai. I build full-stack applications with AI capabilities: React and Python/FastAPI on the surface, LLMs and ML models underneath.
               </p>
               <p>
-                I interned at <span className="font-semibold" style={{ color: 'var(--text-primary)' }}>Hewlett Packard Enterprise</span> as a Backend Developer, shipped <span className="font-semibold" style={{ color: 'var(--accent)' }}>VideoForge AI</span>, and built CNN systems for medical image analysis.
+                I interned at <span className="font-semibold" style={{ color: 'var(--text-primary)' }}>Hewlett Packard Enterprise</span> as a Backend Developer, shipped <span className="font-semibold" style={{ color: 'var(--accent)' }}>Pixii Engine</span>, and built CNN systems for medical image analysis.
               </p>
               <p>
                 I am currently open to <span className="font-semibold" style={{ color: 'var(--text-primary)' }}>Full-Stack and AI Engineering roles</span> where I can own features end-to-end and ship useful, durable products.

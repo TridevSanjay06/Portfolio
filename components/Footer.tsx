@@ -119,7 +119,7 @@ export default function Footer() {
             </div>
             <ul className="flex flex-col gap-2">
               {[
-                { label: 'VideoForge AI', href: 'https://video-forge-ai-weld.vercel.app/', id: 'footer-videoforge' },
+                { label: 'Pixii Engine', href: 'https://pixxi-engine.vercel.app/', id: 'footer-pixii-engine' },
                 {
                   label: 'Admission Portal',
                   href: 'https://admission-enrollment-portal.vercel.app/',
